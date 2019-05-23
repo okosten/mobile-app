@@ -1,0 +1,53 @@
+# project: cj7qcfejz0ju30149c54u4ppq
+# version: 9
+
+type User implements Node {
+  id: ID! @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type Product implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String! @isUnique
+  type: Int!
+  capacity: Float @defaultValue(value: 0.0)
+  updatedAt: DateTime!
+}
+
+type Recipe implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  products: [String!]
+  tags: [Int!]
+}
+
+type Tag implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+}
+
+type ProductList implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String! @isUnique
+}
+
+enum ProductType {
+  QUANTITY
+  WEIGHT
+}

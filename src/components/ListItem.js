@@ -27,7 +27,7 @@ type Props = {
 }
 
 export default function ListItem(props: Props) {
-  const { imageUrl, title, price } = props;
+  const { name, capacity, price } = props.data;
   return (
     <Container>
       <Image source={{ uri: imageUrl }} />
@@ -36,3 +36,5 @@ export default function ListItem(props: Props) {
     </Container>
   );
 }
+
+
