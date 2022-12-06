@@ -19,7 +19,7 @@
 		"react-apollo": "^1.4.15",
 		"react-ionicons": "^1.5.7",
 		"react-multiple-datepicker": "^0.1.0",
-		"react-native": "0.47.1",
+		"react-native": "0.70.6",
 		"react-native-calendar-picker": "^6.0.0",
 		"react-native-calendars": "^1.141.0",
 		"react-native-datepicker": "^1.7.2",
